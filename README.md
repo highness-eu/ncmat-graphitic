@@ -21,4 +21,4 @@ The cif files are from Material Project and the Debye model is used for PDOS.
 
 ## How to use
 
-An jupyter notebook example is provided:
+An jupyter notebook example is provided: https://github.com/highness-eu/ncmat-graphitic/blob/main/plot_example_graphitic.ipynb
