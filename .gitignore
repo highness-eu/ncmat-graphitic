@@ -37,3 +37,4 @@ __pycache__/
 vgcore.*
 /venv/
 *.egg-info/
+.ipynb_checkpoints/
