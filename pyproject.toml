@@ -1,6 +1,6 @@
 [project]
 name = "ncrystal-plugin-GraphiticData"
-version = "0.0.2"
+dynamic = ["version"] # Version based on git tag
 dependencies = [ "ncrystal-pypluginmgr>=0.0.5" ]
 readme = "README.md"
 description = "NCMAT data files for graphite oxides and fullerite (C60)."
@@ -10,9 +10,16 @@ classifiers = [
     "License :: OSI Approved :: Apache Software License",
 ]
 
+[project.urls]
+"Homepage" = "https://github.com/highness-eu/ncmat-graphitic"
+"Bug Tracker" = "https://github.com/mctools/ncrystal/issues"
+
 [build-system]
-requires = ["setuptools>=64.0"]
+requires = ["setuptools>=68.0","setuptools-git-versioning"]
 build-backend = "setuptools.build_meta"
+
+[tool.setuptools-git-versioning]
+enabled = true
 
 [tool.setuptools.package-data]
 "*" = ["*.ncmat"]
